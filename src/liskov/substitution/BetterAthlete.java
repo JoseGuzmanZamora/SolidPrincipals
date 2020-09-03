@@ -1,8 +1,6 @@
-package ChinoGuzman;
+package liskov.substitution;
 
-import java.util.List;
-
-public class Athlete {
+public class BetterAthlete{
     public String name;
     public int availableWater = 10;
 
@@ -14,14 +12,15 @@ public class Athlete {
         this.name = newName;
     }
 
-    public void drinkWater(int amount){
+    public void drinkWater(int amount, int interval){
         for(int i = 0; i < amount; i++) {
-            if(this.availableWater == 0){
+            if(this.availableWater < interval){
                 System.out.println("Opps, no water left");
                 break;
             }else {
-                System.out.println("Drank 1 liter of water");
-                availableWater --;
+                String message = String.format("Drank %d liter of water", interval);
+                System.out.println(message);
+                availableWater -= interval;
             }
         }
     }
