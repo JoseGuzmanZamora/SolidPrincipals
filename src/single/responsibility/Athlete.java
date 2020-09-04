@@ -1,18 +1,8 @@
-package ChinoGuzman;
-
-import java.util.List;
+package single.responsibility;
 
 public class Athlete {
     public String name;
     public int availableWater = 10;
-
-    public String getName(){
-        return name;
-    }
-
-    public void setName(String newName){
-        this.name = newName;
-    }
 
     public void drinkWater(int amount){
         for(int i = 0; i < amount; i++) {

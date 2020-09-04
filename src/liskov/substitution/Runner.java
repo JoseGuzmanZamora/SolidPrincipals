@@ -1,6 +1,6 @@
 package liskov.substitution;
 
-import ChinoGuzman.Athlete;
+import single.responsibility.Athlete;
 
 public class Runner extends Athlete {
 

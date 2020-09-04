@@ -1,7 +1,5 @@
 package single.responsibility;
 
-import ChinoGuzman.Athlete;
-
 public class Trainer extends Athlete {
 
     public void setupTraining(String name){

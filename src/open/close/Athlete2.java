@@ -1,18 +1,10 @@
 package open.close;
 
-public class AlternativeAthlete {
+public class Athlete2 {
     public String name;
     public int availableWater = 10;
     public int availableGatorade = 5;
     public int availableCoke = 1;
-
-    public String getName(){
-        return name;
-    }
-
-    public void setName(String newName){
-        this.name = newName;
-    }
 
     public void drinkWater(int amount){
         for(int i = 0; i < amount; i++) {

@@ -8,19 +8,18 @@ public class Swimmer implements Athlete {
             System.out.println(message);
         }
     }
-
     @Override
-    public void doPushUps(int amount) {
-        for(int i = 0; i < amount; i++){
-            String message = String.format("Did %d pushups",amount);
+    public void run(int kilometers) {
+        for(int i = 0; i < kilometers; i++){
+            String message = String.format("Ran %d kilometers",kilometers);
             System.out.println(message);
         }
     }
 
     @Override
-    public void run(int kilometers) {
-        for(int i = 0; i < kilometers; i++){
-            String message = String.format("Ran %d kilometers",kilometers);
+    public void doPushUps(int amount) {
+        for(int i = 0; i < amount; i++){
+            String message = String.format("Did %d pushups",amount);
             System.out.println(message);
         }
     }

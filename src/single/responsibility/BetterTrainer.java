@@ -1,8 +1,6 @@
 package single.responsibility;
 
-import ChinoGuzman.Athlete;
-
-public class BetterTrainer extends BetterAthlete {
+public class BetterTrainer extends Athlete {
 
     public void setupTraining(String name){
         System.out.println("Setting up training for " + name + ":");
